@@ -6,10 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipeBookComponent } from './recipe-book/recipe-book.component';
-import { RecipeListComponent } from './recipe-book/list/recipe-list.component';
+import { RecipeListComponent } from './recipe-book/recipe-list/recipe-list.component';
 import { ItemComponent } from './recipe-book/item/item.component';
 import { DetailComponent } from './recipe-book/detail/detail.component';
-import { RecipeComponent } from './recipe-book/recipe/recipe.component';
 import { ListEditComponent } from './shopping-list/list-edit/list-edit.component';
 import { IngredientComponent } from './shopping-list/ingredient/ingredient.component';
 
@@ -21,7 +20,6 @@ import { IngredientComponent } from './shopping-list/ingredient/ingredient.compo
     RecipeBookComponent,
     ItemComponent,
     DetailComponent,
-    RecipeComponent,
     RecipeListComponent,
     ListEditComponent,
     IngredientComponent
