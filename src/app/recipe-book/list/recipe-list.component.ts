@@ -9,7 +9,7 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
-    new Recipe('spaghetti', 'long slender noodles with tomato sauce', 'https://www.flickr.com/photos/jshj/824608884'),
+    new Recipe('spaghetti', 'long slender noodles with tomato sauce', 'http://chaledapizza.com.br/wp-content/uploads/2016/07/SpaghettiaoSugo.jpg'),
     new Recipe('chicken alfredo', 'long flat noodles with grilled chicken in alfredo sauce', 'https://upload.wikimedia.org/wikipedia/commons/a/aa/Lori%27s_Diner_chicken_fettucine_alfredo.JPG')
   ];
 
