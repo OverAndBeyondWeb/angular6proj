@@ -1,0 +1,35 @@
+header {
+  background: lightgray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+nav {
+  max-width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+  li {
+    align-self: end;
+    padding-bottom: 24px;
+  }
+}
+.title {
+  text-align: center;
+  font-size: 36px;
+  color: darkslategray;
+  padding: 24px;
+}
+.manage {
+  justify-self: end;
+  align-self: end;
+  padding-bottom: 24px;
+}
+.dropdown {
+  display: none;
+}

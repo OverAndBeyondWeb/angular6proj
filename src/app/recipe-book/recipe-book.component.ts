@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipe-book.component.scss']
 })
 export class RecipeBookComponent implements OnInit {
+ 
 
   constructor() { }
 
