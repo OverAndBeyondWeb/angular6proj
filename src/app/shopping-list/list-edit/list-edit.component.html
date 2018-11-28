@@ -2,16 +2,16 @@
 
   <div class="input-grp">
     <label for="name">Name</label>
-    <input type="text" id="name">
+    <input type="text" id="name" #nameI>
   </div>
   
   <div class="input-grp">
     <label for="amount">Amount</label>
-    <input type="text" id="amount">
+    <input type="text" id="amount" #amountI>
   </div>
 
   <div>
-    <button type="submit">Add</button>
+    <button type="submit" (click)="addItem(nameI, amountI)">Add</button>
     <button type="button">Delete</button>
     <button type="button">Clear</button>
   </div>

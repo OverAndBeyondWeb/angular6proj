@@ -1,5 +1,5 @@
 <div class="shopping-list">
-  <app-list-edit></app-list-edit>
+  <app-list-edit (sendIngredient)="receiveIngredient($event)"></app-list-edit>
   <ol>
     <a href="#" class="ingredient" *ngFor="let ing of ingredients">
       {{ ing.name}} ({{ ing.amount}})
