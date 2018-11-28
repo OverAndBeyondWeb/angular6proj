@@ -1,6 +1,12 @@
 <div class="recipe-detail">
-  <h1>Recipe Name</h1>
-  <button>Manage</button>
-  <p>description</p>
-  <p>ingredients</p>
+  <div class="info">
+    <h1>{{activeRecipe.name}}</h1>
+    <button>Manage</button>
+    <p>{{ activeRecipe.description}}</p>
+    <p>ingredients</p>
+  </div>
+  <div class="img-box">
+    <img [src]="activeRecipe.imagePath" alt="">
+  </div>
+
 </div>

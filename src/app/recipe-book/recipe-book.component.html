@@ -1,5 +1,7 @@
 <div class="recipe-book">
-  <app-recipe-list></app-recipe-list>
-  <app-detail></app-detail>
+  <app-recipe-list (sendRecipeUp)="activeRecipe = $event"></app-recipe-list>
+  <app-detail *ngIf="activeRecipe;else infoText" [activeRecipe]="activeRecipe"></app-detail>
+  <ng-template #infoText>
+    <p>no recipe</p>
+  </ng-template>
 </div>   
-<hr>

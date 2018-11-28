@@ -1,6 +1,20 @@
 .recipe-detail {
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+
   h1 {
     font-size: 60px;
     font-weight: bold;
   }
+
+  
+  .img-box {
+   
+    img {
+      max-width: 100%;
+    }
+  }
+
 }
