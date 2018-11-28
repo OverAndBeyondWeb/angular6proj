@@ -1,0 +1,21 @@
+.recipes {
+  display: block;
+  margin: 20px 0;
+  border: 2px solid blue;
+  cursor: pointer;
+
+  .name {
+    float: left;
+  }
+
+  img {
+    max-width: 100px;
+    float: right;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}

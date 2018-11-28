@@ -1,6 +1,4 @@
 
-  <app-header></app-header>
-
-
-<app-recipe-book></app-recipe-book>
-<app-shopping-list></app-shopping-list>
+<app-header (selectedComp)="showComp($event)"></app-header>
+<app-recipe-book *ngIf="activeComp === 'recipe'"></app-recipe-book>
+<app-shopping-list  *ngIf="activeComp !== 'recipe'"></app-shopping-list>
