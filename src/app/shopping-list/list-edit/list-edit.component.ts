@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';
 import { Ingredient } from '../../shared/ingredient.model';
 
 @Component({
@@ -6,8 +6,11 @@ import { Ingredient } from '../../shared/ingredient.model';
   templateUrl: './list-edit.component.html',
   styleUrls: ['./list-edit.component.scss']
 })
+
 export class ListEditComponent implements OnInit {
 
+  @ViewChild('nameI') nameRef: ElementRef;
+  @ViewChild('amountI') amountRef: ElementRef;
   @Output() sendIngredient = new EventEmitter<Ingredient>();
 
   ingredient: Ingredient;
@@ -17,9 +20,10 @@ export class ListEditComponent implements OnInit {
   ngOnInit() {
   }
 
-  addItem(n:HTMLInputElement, a:HTMLInputElement) {
-    console.log(n.value, a);
-    this.ingredient = new Ingredient(n.value, +a.value)
+  addItem() {
+    this.ingredient = new Ingredient(
+      this.nameRef.nativeElement.value, +this.amountRef.nativeElement.value
+      )
     console.log(this.ingredient);
     this.sendIngredient.emit(this.ingredient);
   }
